@@ -6,49 +6,53 @@ Completa cada sección. Usa commits por sección; la historia del repositorio se
 
 ## 1. Pregunta e hipótesis
 
-*Hipótesis que el experimento pueda confirmar o refutar (formúlela como una comparación medible entre los grupos).*
+El producto en el pasillo principal vende más en promedio que en su ubicación habitual en ventas semanales durante 4 semanas.
 
 ## 2. Unidad experimental
 
-*¿Qué recibe el tratamiento? ¿Cuántas unidades se incluyen?*
+Semana-Tienda (**# de tiendas por el # de semanas asociadas al experimento**)
 
-- Unidad:
-- Número de unidades y justificación:
+-10 tiendas por 4 semanas = 40 unidades experimentales 
 
 ## 3. Factor, niveles y tratamiento
 
-- **Factor** (variable manipulada):
-- **Niveles** (valores del factor):
-- **Tratamiento** (combinación asignada):
+- **Factor** (variable manipulada): Ubicación
+- **Niveles** (valores del factor): Pasillo y ubicación habitual
+- **Tratamiento** (combinación asignada): Pasillo durante una semana y ubicación habitual durante otra (grupo de control)
 
 ## 4. Grupo de control
 
-*¿Cuál es la referencia sin tratamiento y qué rol cumple?*
+La misma tienda pero con el producto dispuesto en la ubicación habitual. 
 
 ## 5. Aleatorización
 
-*¿Cómo se asignan las unidades a los grupos? ¿Por qué es necesaria?*
+Sorteo de 20 tiendas a cada grupo (paralelo)
+Explica por qué el sorteo reparte los factores desconocidos entre los grupos.
 
 - **Línea de código de la asignación (Python o R):** escribe el comando que asigna al azar tus N unidades a los dos grupos (tratamiento y control) y ejecútalo con semilla. Incluye el resultado de una corrida y explica por qué el sorteo reparte los factores desconocidos entre los grupos.
 
 ## 6. Respuesta y medición
 
-- Variable respuesta:
-- Período de medición:
-- Quién registra y cómo (¿ciego?):
+- Variable respuesta: Ventas semanales en USD
+- Período de medición: 4 semanas 
+- Quién registra y cómo (¿ciego?): Mediante el POS, ciego (vendedor no sabría si el producto está en principal o en habitual)
 
 ## 7. Factores a controlar (mínimo 4)
 
 | Factor a controlar | Cómo se controla o registra |
 |---|---|
-| 1. | |
-| 2. | |
-| 3. | |
-| 4. | |
+| 1. | Clima |
+| 2. | Evento Local|
+| 3. | Surtido / Stock|
+| 4. | Cambios en el personal|
 
 ## 8. Limitaciones del diseño
 
 *¿Qué podría invalidar el experimento si no se controla? ¿Qué no se podrá concluir?*
+
+- Pérdida de potencia por promociones
+- Canibalización de las tiendas
+- 
 
 ## 9. Comparación en código (Python/R)
 
