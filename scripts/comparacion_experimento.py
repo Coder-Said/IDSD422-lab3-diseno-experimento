@@ -18,3 +18,22 @@ df["ubicacion"].value_counts()
 
 # TODO 4: escribe 2–3 líneas de interpretación (sección 9 de la plantilla):
 #         por qué con 4 filas no se puede concluir y qué le faltaría al análisis
+
+
+# Sorteo aleatorio en python 
+
+import pandas as pd
+import numpy as np
+tiendas = ["Quito Norte", "Quito Sur", "Guayaquil Centro", "Guayaquil Norte",
+           "Cuenca Centro", "Cuenca Sur", "Ambato Centro", "Manta", "Loja", "Machala"]
+semanas = [1,2,3,4]
+
+#sorteo de la condicion inicial 
+rng = np.random.default_rng(1234597)
+primera = rng.choice(["pasillo principal","habitual"], size = len(tiendas))
+filas = []
+for tienda, cond in zip(tiendas,primera):
+  otra = "habitual" if cond == "pasillo_principal" else "pasillo_primcipal"
+  for s in semanas: 
+    filas.append({"tienda": tienda, "semana": s,
+                  "ubicacion": cond if s%2 == 1 else otra})
